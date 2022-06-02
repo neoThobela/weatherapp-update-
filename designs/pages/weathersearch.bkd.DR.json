@@ -527,7 +527,9 @@
                         "_attrDef": "p",
                         "_complexity": "advanced",
                         "displayAs": "showCard",
-                        "attrType": "INPUT"
+                        "attrType": "INPUT",
+                        "inValid": false,
+                        "message": ""
                     },
                     {
                         "_key": "[weatherdata]",
@@ -536,7 +538,9 @@
                         "_attrDef": "p",
                         "_complexity": "advanced",
                         "displayAs": "weatherdata",
-                        "attrType": "INPUT"
+                        "attrType": "INPUT",
+                        "inValid": false,
+                        "message": ""
                     },
                     {
                         "_key": "(log)",
@@ -555,7 +559,9 @@
                             "input": [
                                 "$event"
                             ]
-                        }
+                        },
+                        "inValid": false,
+                        "message": ""
                     },
                     {
                         "_key": "#weatherView",
@@ -596,7 +602,9 @@
                         "_attrDef": "p",
                         "_complexity": "advanced",
                         "displayAs": "logArray",
-                        "attrType": "INPUT"
+                        "attrType": "INPUT",
+                        "inValid": false,
+                        "message": ""
                     }
                 ]
             }
