@@ -1,0 +1,62 @@
+{
+    "TYPE": {
+        "name": "TYPE",
+        "properties": {
+            "production": "client",
+            "ssdURL": "client",
+            "tenantName": "client",
+            "appName": "client",
+            "namespace": "client",
+            "googleMapKey": "client",
+            "useDefaultExceptionUI": "client",
+            "isIDSEnabled": "client",
+            "SSD_BASE_PATH": "server",
+            "SSD_DEFAULT_PORT": "server",
+            "webAppMountpoint": "both",
+            "CLOCK_TOLERANCE": "server",
+            "NGFORAGE_MOBILE_DRIVER": "client",
+            "apiId": "server",
+            "weatherProviderURL": "both"
+        }
+    },
+    "dev": {
+        "name": "dev",
+        "properties": {
+            "production": false,
+            "ssdURL": "http://localhost:8081/api/",
+            "tenantName": "neutrinos",
+            "appName": "weatherapp",
+            "namespace": "com.neutrinos.weatherapp",
+            "googleMapKey": "AIzaSyCSTnVwijjv0CFRA4MEeS-H6PAQc87LEoU",
+            "useDefaultExceptionUI": true,
+            "isIDSEnabled": "false",
+            "SSD_BASE_PATH": "/api",
+            "SSD_DEFAULT_PORT": "8081",
+            "webAppMountpoint": "web",
+            "CLOCK_TOLERANCE": "5",
+            "NGFORAGE_MOBILE_DRIVER": "INDEXED_DB",
+            "apiId": "6076e953046196d0c851e53173393c0d",
+            "weatherProviderURL": "http://api.openweathermap.org/data/2.5/weather"
+        }
+    },
+    "prod": {
+        "name": "prod",
+        "properties": {
+            "production": true,
+            "ssdURL": "http://localhost:8081/api/",
+            "tenantName": "neutrinos",
+            "appName": "weatherapp",
+            "namespace": "com.neutrinos.weatherapp",
+            "googleMapKey": "AIzaSyCSTnVwijjv0CFRA4MEeS-H6PAQc87LEoU",
+            "useDefaultExceptionUI": true,
+            "isIDSEnabled": "false",
+            "SSD_BASE_PATH": "/api",
+            "SSD_DEFAULT_PORT": "8081",
+            "webAppMountpoint": "web",
+            "CLOCK_TOLERANCE": "5",
+            "NGFORAGE_MOBILE_DRIVER": "INDEXED_DB",
+            "apiId": "6076e953046196d0c851e53173393c0d",
+            "weatherProviderURL": "http://api.openweathermap.org/data/2.5/weather"
+        }
+    }
+}

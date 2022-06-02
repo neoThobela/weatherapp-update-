@@ -1,0 +1,22 @@
+{
+    "b4bad509-46ad-5906-215f-a9f24e1ee6d1": {
+        "dataModelId": "b4bad509-46ad-5906-215f-a9f24e1ee6d1",
+        "name": "logobject",
+        "description": "captures the log info of the weather search",
+        "dataSource": "neutrinos-rt",
+        "fields": [
+            {
+                "name": "type",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "name",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            }
+        ]
+    }
+}

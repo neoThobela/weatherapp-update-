@@ -1,0 +1,18 @@
+{
+    "routes": [
+        {
+            "path": "weather",
+            "component": "weathersearchComponent"
+        },
+        {
+            "path": "''",
+            "redirectTo": "weather",
+            "pathMatch": "full",
+            "default": true
+        },
+        {
+            "path": "**",
+            "component": "PageNotFoundComponent"
+        }
+    ]
+}
