@@ -156,7 +156,7 @@ export class weatherserver {
 
   async constructParams(bh) {
     try {
-      bh.url = process.env.weatherProviderURL;
+      bh.url = `${process.env.weatherProviderURL}?q=${bh.input.query.cityName}&appid=${process.env.apiId}&units=metric`;
       bh.qparams = {
         q: bh.input.query.cityName,
         APPID: process.env.apiId,
@@ -180,7 +180,7 @@ export class weatherserver {
         followRedirects: true,
         cookies: undefined,
         authType: undefined,
-        body: bh.result,
+        body: undefined,
         paytoqs: false,
         proxyConfig: undefined,
         tlsConfig: undefined,
@@ -217,7 +217,7 @@ export class weatherserver {
         requestOptions.token
       );
 
-      bh.qparams = responseMsg;
+      bh.result = responseMsg;
       await this.sendResponse(bh);
       this.logResult(bh);
       //appendnew_next_sd_3XEr5G6We2ym57ZE

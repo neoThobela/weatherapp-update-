@@ -16,7 +16,7 @@
         "z": "sd_1lxTACBqgQLYGeq7",
         "viewType": "common",
         "nodeType": "start",
-        "name": "",
+        "name": "On init",
         "inputVariables": [
             {
                 "key": "logArray",
@@ -28,7 +28,7 @@
         ],
         "localVariables": [],
         "outputVariables": [],
-        "functionName": "sd_HoOHOAACum21lQMN",
+        "functionName": "onInit",
         "category": "Lifecycle Events",
         "x": 30,
         "y": 30,

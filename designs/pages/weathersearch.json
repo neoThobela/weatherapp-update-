@@ -31,8 +31,7 @@
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "weathersearchComponent",
-        "generated": false
+        "serviceName": "weathersearchComponent"
     },
     {
         "id": "sd_h9pZPfeFZDZt3D7w",
@@ -65,7 +64,9 @@
         "x": 180,
         "y": 30,
         "wires": [
-            []
+            [
+                "sd_ej5I9cB7j5ifHQff"
+            ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
@@ -103,8 +104,7 @@
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "weathersearchComponent",
-        "generated": false
+        "serviceName": "weathersearchComponent"
     },
     {
         "id": "sd_1aVNclKMNApPQJKb",
@@ -157,8 +157,7 @@
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "weathersearchComponent",
-        "generated": false
+        "serviceName": "weathersearchComponent"
     },
     {
         "id": "sd_YkPlqEESwoHFkmv7",
@@ -208,7 +207,7 @@
         "y": 420,
         "wires": [
             [
-                "sd_RRPddxxqCkZttsXV"
+                "sd_LCfJdN0U6iy6TtlZ"
             ],
             [
                 "sd_x6XN7iW4VFpO5h59"
@@ -232,7 +231,7 @@
         "y": 500,
         "wires": [
             [
-                "sd_LCfJdN0U6iy6TtlZ"
+                "sd_RRPddxxqCkZttsXV"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -267,27 +266,27 @@
                 "key": "logobject",
                 "map": true,
                 "valueType": "bh",
-                "value": "input.successlog"
+                "value": "successlog"
             }
         ],
         "outputMapping": [],
         "serviceImportPath": "./weathersearch",
         "startName": "updateLog",
         "inputParams": [
-            "bh.input.successlog"
+            "bh.successlog"
         ],
         "accept_bh": false,
         "accept_csd": false,
         "functionName": "successLog",
         "category": "General",
-        "x": 365,
-        "y": 320,
+        "x": 545,
+        "y": 460,
         "wires": [
             []
         ],
         "__n_excludedFromValidation__": {},
-        "generated": true,
-        "generateNext": false
+        "generateNext": false,
+        "generated": true
     },
     {
         "id": "sd_jbjA2gZ591ns0cN0",
@@ -313,8 +312,7 @@
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "weathersearchComponent",
-        "generated": false
+        "serviceName": "weathersearchComponent"
     },
     {
         "id": "sd_gVdyJmlN7r73XZdS",
@@ -330,7 +328,7 @@
         "y": 320,
         "wires": [
             [
-                "sd_RRPddxxqCkZttsXV"
+                "sd_LCfJdN0U6iy6TtlZ"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -378,14 +376,14 @@
         "accept_csd": false,
         "functionName": "errorLog",
         "category": "General",
-        "x": 545,
-        "y": 500,
+        "x": 365,
+        "y": 320,
         "wires": [
             []
         ],
         "__n_excludedFromValidation__": {},
-        "generated": true,
-        "generateNext": false
+        "generateNext": false,
+        "generated": true
     },
     {
         "id": "sd_TX7zFbxEmBkg1354",
@@ -427,8 +425,7 @@
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "weathersearchComponent",
-        "generated": false
+        "serviceName": "weathersearchComponent"
     },
     {
         "id": "sd_Zl1BN1WeLGuOhbWX",
@@ -609,10 +606,10 @@
         "z": "sd_DIFilRiNHho5DylT",
         "viewType": "client-pages",
         "nodeType": "flow",
-        "name": "log ssWeatherApiUrl",
+        "name": "ssWeatherApiUrl",
         "outputs": 0,
-        "logObject": "bh.local.ssWeatherApiUrl",
-        "functionName": "logSsWeatherApiUrl",
+        "logObject": "bh.local",
+        "functionName": "ssWeatherApiUrl",
         "category": "General",
         "x": 625,
         "y": 1060,
@@ -620,7 +617,7 @@
         "__ssdTypeInputs__": {
             "logObject": {
                 "type": "bh.local",
-                "value": "ssWeatherApiUrl",
+                "value": "",
                 "constant": false
             }
         },
@@ -655,8 +652,8 @@
             {
                 "key": "cityName",
                 "map": true,
-                "valueType": "bh",
-                "value": "input.cityName"
+                "valueType": "bh.input",
+                "value": "cityName"
             }
         ],
         "outputMapping": [],
@@ -671,6 +668,43 @@
         "category": "General",
         "x": 585,
         "y": 880,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_ej5I9cB7j5ifHQff",
+        "type": "UseDependency",
+        "z": "sd_DIFilRiNHho5DylT",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "NgForm",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "ngForm"
+                },
+                "injectable": false
+            }
+        ],
+        "import_all": false,
+        "library": "@angular/forms",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_ej5I9cB7j5ifHQff",
+        "category": "Function",
+        "x": 325,
+        "y": 40,
         "wires": [
             []
         ],

@@ -12,8 +12,8 @@ import {
 import { SDBaseService } from 'app/n-services/SDBaseService'; //_splitter_
 import { SDPageCommonService } from 'app/n-services/sd-page-common.service'; //_splitter_
 import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.service'; //_splitter_
+import { NgForm, FormControl, Validators, FormBuilder } from '@angular/forms'; //_splitter_
 import { MatSnackBar } from '@angular/material/snack-bar'; //_splitter_
-import { FormControl, Validators, FormBuilder } from '@angular/forms'; //_splitter_
 //append_imports_end
 
 @Component({
@@ -111,10 +111,21 @@ export class weathersearchComponent {
     try {
       this.page.searchString = undefined;
       this.page.logArray = [];
+      bh = this.sd_ej5I9cB7j5ifHQff(bh);
       //appendnew_next_sd_h9pZPfeFZDZt3D7w
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_h9pZPfeFZDZt3D7w');
+    }
+  }
+
+  sd_ej5I9cB7j5ifHQff(bh) {
+    try {
+      this.page.ngForm = NgForm;
+      //appendnew_next_sd_ej5I9cB7j5ifHQff
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_ej5I9cB7j5ifHQff');
     }
   }
 
@@ -154,7 +165,7 @@ export class weathersearchComponent {
           undefined
         )
       ) {
-        bh = this.successLog(bh);
+        bh = this.errorLog(bh);
         otherwiseFlag = false;
       }
       if (
@@ -175,14 +186,14 @@ export class weathersearchComponent {
     }
   }
 
-  successLog(bh) {
+  errorLog(bh) {
     try {
-      let outputVariables = this.updateLog(bh.input.successlog);
+      let outputVariables = this.updateLog(bh.input.errorlog);
 
-      //appendnew_next_successLog
+      //appendnew_next_errorLog
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_RRPddxxqCkZttsXV');
+      return this.errorHandler(bh, e, 'sd_LCfJdN0U6iy6TtlZ');
     }
   }
 
@@ -196,7 +207,7 @@ export class weathersearchComponent {
           'Successfully Retrieved the Weather Data for city: ' +
           bh.input.cityName,
       };
-      bh = this.errorLog(bh);
+      bh = this.successLog(bh);
       //appendnew_next_sd_x6XN7iW4VFpO5h59
       return bh;
     } catch (e) {
@@ -204,14 +215,14 @@ export class weathersearchComponent {
     }
   }
 
-  errorLog(bh) {
+  successLog(bh) {
     try {
-      let outputVariables = this.updateLog(bh.input.errorlog);
+      let outputVariables = this.updateLog(bh.successlog);
 
-      //appendnew_next_errorLog
+      //appendnew_next_successLog
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_LCfJdN0U6iy6TtlZ');
+      return this.errorHandler(bh, e, 'sd_RRPddxxqCkZttsXV');
     }
   }
 
@@ -224,7 +235,7 @@ export class weathersearchComponent {
           bh.input.cityName ? ` For the City: ${bh.input.cityName}` : ''
         }!`,
       };
-      bh = this.successLog(bh);
+      bh = this.errorLog(bh);
       //appendnew_next_sd_gVdyJmlN7r73XZdS
       return bh;
     } catch (e) {
@@ -322,7 +333,7 @@ export class weathersearchComponent {
       };
       this.page.weatherdata = await this.sdService.nHttpRequest(requestOptions);
       bh = this.callProcessWeather(bh);
-      this.logSsWeatherApiUrl(bh);
+      this.ssWeatherApiUrl(bh);
       //appendnew_next_callServerFlow
       return bh;
     } catch (e) {
@@ -341,10 +352,10 @@ export class weathersearchComponent {
     }
   }
 
-  logSsWeatherApiUrl(bh) {
+  ssWeatherApiUrl(bh) {
     try {
-      console.log(new Date().toLocaleTimeString(), bh.local.ssWeatherApiUrl);
-      //appendnew_next_logSsWeatherApiUrl
+      console.log(new Date().toLocaleTimeString(), bh.local);
+      //appendnew_next_ssWeatherApiUrl
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_P2HuyNiWKfXBJov9');

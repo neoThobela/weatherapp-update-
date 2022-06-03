@@ -447,7 +447,7 @@
                 },
                 {
                     "_key": "style",
-                    "_value": "width:500px",
+                    "_value": "width:500px;",
                     "_type": "kv",
                     "_attrDef": "p"
                 },

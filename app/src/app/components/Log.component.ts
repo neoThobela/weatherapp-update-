@@ -40,7 +40,7 @@ export class LogComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_HoOHOAACum21lQMN(bh);
+      this.onInit(bh);
     }
   }
 
@@ -52,10 +52,10 @@ export class LogComponent {
     //append_listeners
   }
 
-  sd_HoOHOAACum21lQMN(bh) {
+  onInit(bh) {
     try {
       bh = this.sd_d1pwtWRwKlykKIWy(bh);
-      //appendnew_next_sd_HoOHOAACum21lQMN
+      //appendnew_next_onInit
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_HoOHOAACum21lQMN');

@@ -173,12 +173,6 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
-                    },
-                    {
-                        "_key": "#weatherForm",
-                        "_value": "ngForm",
-                        "_type": "kv",
-                        "_attrDef": "c"
                     }
                 ],
                 "65a2d00e-27da-96e1-3d63-382115ed9d8f": {
@@ -262,7 +256,7 @@
                             },
                             {
                                 "_key": "placeholder",
-                                "_value": "Enter city nmae",
+                                "_value": "Enter city name",
                                 "_type": "kv",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
@@ -299,7 +293,7 @@
                             },
                             {
                                 "_key": "name",
-                                "_value": "searcIp",
+                                "_value": "searchIp",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -522,7 +516,7 @@
                     },
                     {
                         "_key": "[showCard]",
-                        "_value": "pag.showCard",
+                        "_value": "page.showCard",
                         "_type": "kv",
                         "_attrDef": "p",
                         "_complexity": "advanced",
@@ -566,7 +560,7 @@
                     {
                         "_key": "#weatherView",
                         "_value": "#weatherView",
-                        "_type": "kv",
+                        "_type": "a",
                         "_attrDef": "c"
                     }
                 ]

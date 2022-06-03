@@ -40,6 +40,7 @@
                 }
             }
         },
+        "uploadFileOptions": {},
         "editableListData": {
             "responses": [],
             "params": [],
@@ -77,7 +78,7 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "construct params",
-        "script": "bh.url = process.env.weatherProviderURL;\nbh.qparams = {\nq: bh.input.query.cityName,\nAPPID: process.env.apiId,\nunits: 'metric'\n} ",
+        "script": "bh.url = `${process.env.weatherProviderURL}?q=${bh.input.query.cityName}&appid=${process.env.apiId}&units=metric`;\nbh.qparams = {\nq: bh.input.query.cityName,\nAPPID: process.env.apiId,\nunits: 'metric'\n} ",
         "functionName": "constructParams",
         "category": "Function",
         "x": 205,
@@ -107,15 +108,14 @@
         },
         "ret": "json",
         "retMappingObj": {},
-        "reqBody": "bh.result",
         "reqBodyObj": {
             "mapVarType": "bh",
-            "mapVarValue": "result"
+            "mapVarValue": ""
         },
-        "resultMapping": "bh.qparams",
+        "resultMapping": "bh.result",
         "resultMappingObj": {
             "mapVarType": "bh",
-            "mapVarValue": "qparams"
+            "mapVarValue": "result"
         },
         "headers": {},
         "headersObj": [],
@@ -187,6 +187,7 @@
             "obj": "bh.result.payload",
             "send": "bh.result.payload"
         },
+        "cookies": [],
         "inputs": 1,
         "outputs": 0,
         "editableListData": {
@@ -282,6 +283,7 @@
             "obj": "{message:\"Something went wrong!\"}",
             "send": "{message:\"Something went wrong!\"}"
         },
+        "cookies": [],
         "inputs": 1,
         "outputs": 0,
         "editableListData": {

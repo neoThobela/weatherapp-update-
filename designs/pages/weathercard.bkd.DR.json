@@ -150,12 +150,6 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
-                    },
-                    {
-                        "_key": "*ngIf",
-                        "_value": "showCard",
-                        "_type": "kv",
-                        "_attrDef": "c"
                     }
                 ],
                 "be7dae3f-38e9-e49b-a711-8a2d0f625697": {
@@ -214,6 +208,12 @@
                             "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "*ngIf",
+                            "_value": "showCard",
+                            "_type": "kv",
+                            "_attrDef": "c"
                         }
                     ],
                     "7b076095-419e-e3f3-71b0-50215e053413": {
@@ -771,7 +771,7 @@
                                 "designerReference": [
                                     {
                                         "_key": "componentLabel",
-                                        "_value": "Grid Tile",
+                                        "_value": "<b>{{m.key | titlecase }}</b> ",
                                         "_type": "kv",
                                         "_attrDef": "p",
                                         "_useAsLabel": true
@@ -808,7 +808,7 @@
                                     },
                                     {
                                         "_key": "label",
-                                        "_value": "<b>{{m.key | titlecase }}</b> ",
+                                        "_value": "",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -821,7 +821,7 @@
                                 "designerReference": [
                                     {
                                         "_key": "componentLabel",
-                                        "_value": "Grid Tile",
+                                        "_value": "{{m.value + (m.key.includes('temp')?'°C': \" \")}}",
                                         "_type": "kv",
                                         "_attrDef": "p",
                                         "_useAsLabel": true
